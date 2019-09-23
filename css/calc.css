@@ -1,0 +1,24 @@
+/* div, a { border: 1px solid lightgrey; } */
+body { background-image: url("../img/math.jpg")
+}
+.calc { 
+    width:300px; height:420px; margin:auto; background-color: #777; border-radius:20px; padding-top:20px;
+} 
+.calc .disp {
+    width:280px; height:60px; background-color: yellowgreen; border-radius:20px;
+    font-size: 40px; text-align: right; margin-left: auto; margin-right: auto; margin-bottom: 20px; 
+}
+.calc .btns {
+    width: 280px; margin-left: auto; margin-right: auto;
+}
+.calc .btns a {
+    display: block; width:60px; height:50px; float:left; margin:5px; border-radius: 10px;
+    color:white; font-size: 35px; text-align: center; text-decoration: none;
+}
+.calc .btns a:hover {
+    background-color: cyan;
+}
+.btn_numb {background-color: black;}
+.btn_sign {background-color: #444;}
+.bg_red {background-color: red;}
+.bg_dark {background-color: #333;}

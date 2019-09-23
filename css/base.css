@@ -1,0 +1,23 @@
+body {margin:0;}
+
+div, a { box-sizing: border-box; }
+
+.gnb {
+    list-style-type: none; margin:0; padding:0; overflow:hidden; background-color: #333; margin-bottom: 24px;
+}
+.gnb li { 
+    list-style-type: none; margin:0; padding:0; display:block;  float:left;   
+ }
+.gnb .float_r{ float:right; color:white; }
+.gnb li a {
+    display: block; color: white; text-align:center; padding: 15px 15px; text-decoration: none;
+}
+.gnb li a.active {
+    background-color : red; color: white;
+}
+.gnb li a:hover {
+    background-color : grey; 
+}
+.clearfix{
+    content:""; clear:both; display:table;
+}

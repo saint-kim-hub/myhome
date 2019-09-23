@@ -1,0 +1,22 @@
+.content { 
+    margin-left:auto; margin-right: auto; text-align: center;
+}
+
+.content .signin { 
+    box-sizing: border-box;
+}
+
+.content label { 
+    width: 80px; display: inline-block; 
+}
+
+.content input { 
+    width: 130px; margin-top: 5px; padding: 3px
+}
+
+
+
+
+
+
+
