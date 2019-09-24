@@ -17,3 +17,41 @@
 .content .join input { 
     width: 70px; text-align: center; 
 }
+
+.box_average {
+    width : 50px; text-align: center;
+}
+.bo_nick {
+    width : 70px; text-align: center;
+}
+.bo_score {
+    width : 40px; text-align: center;
+}
+.box { 
+    box-sizing: border-box; width: 124px; height: 22px; border: 1px solid lightgray; 
+    font-size: 12px; padding: 2px 0 0 5px ; vertical-align: middle;
+}
+.ei_box { 
+    box-sizing: border-box; width:130px; height:50px; float:left; padding:0;
+} 
+.fo_box {
+    box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 95px;
+}
+.th_box {
+    box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 130px;
+}
+.tw_box {
+    box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 130px;
+}
+.on_box {
+    box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 130px;
+}
+.ft_box {
+    box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 270px;
+}
+.to_box {
+    box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 300px;
+}
+.fto_box {
+    box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 500px;
+}
