@@ -3,7 +3,7 @@ body {margin:0;}
 div, a { box-sizing: border-box; }
 
 .gnb {
-    list-style-type: none; margin:0; padding:0; overflow:hidden; background-color: #333; margin-bottom: 24px;
+    list-style-type: none; margin:0; padding:0; overflow:hidden; background-color: #000; margin-bottom: 24px;
 }
 .gnb li { 
     list-style-type: none; margin:0; padding:0; display:block;  float:left;   
@@ -13,7 +13,7 @@ div, a { box-sizing: border-box; }
     display: block; color: white; text-align:center; padding: 15px 15px; text-decoration: none;
 }
 .gnb li a.active {
-    background-color : red; color: white;
+    background-color : #f00 ; color: white;
 }
 .gnb li a:hover {
     background-color : grey; 

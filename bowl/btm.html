@@ -7,6 +7,15 @@
     <title>Bowling Tournament</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/bowl.css">
+    <script>
+        function pwChk() {
+            if(document.firm.pw.value =="0000")
+            alert("정확합니다")
+            else {
+            alert("다시 입력하세요")
+            }
+         }
+    </script>
 </head>
 <body>
     <!-- 헤더 -->
@@ -32,7 +41,7 @@
             <!-- <label>E-mail</label>
             <input type="email" id="inputEmail" placeholder="Email address" required><br>
             <label>Password</label>
-            <input type="password" id="inputPassword" placeholder="Password" required><br><br>
+            <input type="password" id="inputPassword" name="pw" size=4 placeholder="Password" onclick="pwChk()" required><br><br>
             <button type="submit" href="/myhome/bowl/bsi.html">Log in</button> -->
             <button><a href="/myhome/bowl/bsi.html">Log in</a></button>
         </form> 
