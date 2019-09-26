@@ -1,31 +1,73 @@
 var objArray = new Array();
-function printArray() {
+function average() {
     var objResult = document.getElementById("result");
-    var objItem = document.getElementById("item");
+    var objAvg = document.getElementById("avg");
     objResult.innerText = objArray.join(",");
     objItem.value="";
 }
 function doPush(){
-     var objItem = document.getElementById("item");
-     objArray.push(objItem.value);
-     printArray();
+    var objAvg = document.getElementById("avg");
+    objArray.push(objAvg.value);
+    nickname();
+    average();
 }
-function gen() {
-    n1 = Math.floor(Math.random()*1);
-    f.random.value = n1;
-}
-function laneData(){ 
-    var nickname = new Array(); 
-        // nickname[0]="꿈꾸는나무"; 
-        // nickname[1]="사과"; 
-        // nickname[2]="배"; 
-        // nickname[3]="포도"; 
-        
-        nickname="200";
-        nickname="나무";
-
-var lane = Math.floor(Math.random()*(nickname.length)); 
-
-document.write(nickname[lane]); 
-alert(laneData()); 
-} 
+function nickname(){
+    var getP = document.getElementById("selNick");
+    var nick = getP.options[getP.selectedIndex].value;
+    var setNick = 0;
+    if (nick == '143') {
+        setNick = '꿈꾸는나무';
+    } else if(nick == '200') {
+        setNick = '리에';
+    } else if(nick == '145') {
+        setNick = '판기';
+    } else if(nick == '185') {
+        setNick = '투마로';
+    } else if(nick == '161') {
+        setNick = '포도';
+    } else if(nick == '126') {
+        setNick = '수박';
+    } else if(nick == '173') {
+        setNick = '토마토';
+    } else if (nick == '118') {
+        setNick = '오렌지';
+    } else if(nick == '119') {
+        setNick = '메론';
+    } else if(nick == '120') {
+        setNick = '바나나';
+    } else if(nick == '131') {
+        setNick = '파인애플';
+    } else if (nick == '162') {
+        setNick = '딸기';
+    } else if(nick == '133') {
+        setNick = '감';
+    } else if(nick == '143') {
+        setNick = '한라봉';
+    } else if(nick == '158') {
+        setNick = '망고';
+    } else if(nick == '175') {
+        setNick = '미수';
+    } else{
+    return false;
+    }
+    document.getElementById("nick").value = setNick;
+}            
+// $(function() { 
+//     var seatCnt = $("li").length; 
+// $("#setBtn").click(function() { 
+//     var seatNumArray = [], 
+//     rNum; 
+//     for( var i = 0; i < seatCnt; i++ ) { 
+//         while(true) { 
+//         rNum = Math.floor(Math.random() * seatCnt) + 1; 
+//         var ex = false; 
+//         seatNumArray.forEach(function(num) { 
+//             if( num == rNum ) ex = !ex; 
+//         }) 
+//             if( !ex ) break; 
+//         } 
+//         seatNumArray.push(rNum); 
+//         $("li").eq(i).text(rNum); 
+//     } 
+// }) 
+//  })  

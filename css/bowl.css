@@ -1,60 +1,44 @@
 .content { 
     margin-left:auto; margin-right: auto; text-align: center;
 }
-
 .content .signin { 
     box-sizing: border-box;
 }
-
 .content label { 
     width: 80px; display: inline-block; 
 }
-
 .content input { 
-    width: 130px; margin-top: 5px; 
+    width: 70px; margin-top: 5px; 
 }
+
 
 .content .join input { 
-    width: 70px; text-align: center; 
+    width: 70px;  
 }
 
-.box_average {
-    width : 50px; text-align: center;
-}
 .bo_nick {
     width : 70px; text-align: center;
 }
 .bo_score {
-    width : 40px; text-align: center;
+    width : 70px; text-align: center;
 }
 .box { 
-    box-sizing: border-box; width: 124px; height: 22px; border: 1px solid lightgray; 
-    font-size: 12px; padding: 2px 0 0 5px ; vertical-align: middle;
+    box-sizing: border-box; width: 74px; height: 22px; border: 1px solid lightgray; 
+    font-size: 12px; padding: 2px 0 0 5px ; vertical-align: middle; text-align: left;
 }
 .ei_box { 
-    box-sizing: border-box; width:130px; height:50px; float:left; padding:0;
+    box-sizing: border-box; width:90px; height:50px; float:left; padding:0; 
 } 
-.fo_box {
-    box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 95px;
-}
-.th_box {
-    box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 130px;
-}
-.tw_box {
-    box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 130px;
-}
-.on_box {
-    box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 130px;
-}
+
 .ft_box {
-    box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 270px;
+    box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 150px;
 }
 .to_box {
+    box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 200px;
+}
+.fo_box {
+    box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 50px;
+}        
+.fto_box {
     box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 300px;
 }
-.fto_box {
-    box-sizing: border-box; width:130px; height:50px; float:left; padding:0; margin-left: 500px;
-}
-ul > li { list-style:none; float:left;
-    width:70px; height:22px; line-height:70px; text-align:center; float:left; margin:2px; border:1px solid #dadada; 
-} 

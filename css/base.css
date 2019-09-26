@@ -13,7 +13,7 @@ div, a { box-sizing: border-box; }
     display: block; color: white; text-align:center; padding: 15px 15px; text-decoration: none;
 }
 .gnb li a.active {
-    background-color : #f00 ; color: white;
+    background-color : #cd3232 ; color: white;
 }
 .gnb li a:hover {
     background-color : grey; 

@@ -7,6 +7,7 @@
     <title>Bowling Tournament Join</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/bowl.css">
+    <script src="/myhome/js/base.js"></script>
 </head>
 <body>
     <!-- 헤더 -->
@@ -27,38 +28,30 @@
     <!-- 컨텐츠 -->
     <!-- <section> -->
     <div class="content">
-        <h2>Welcome to Tournament Game</h2>
+        <h2>Welcome to Tournament</h2>
         <form action="join">
-            <div>
-                <span class="na_box">
-                        <select name="nick" onchange="document.getElementById('i').value=this.value;">
+                <div>
+                    <select id="selNick" onchange="document.getElementById('avg').value=this.value;">
                         <option>nick name</option>
-                        <option value="100">꿈꾸는나무</option>
-                        <option value="200">배</option>
-                        <option value="130">귤</option>
-                        <option value="135">복숭아</option>
-                        <option value="145">포도</option>
-                        <option value="167">수박</option>
-                        <option value="187">토마토</option>
-                        <option value="188">오렌지</option>
-                        <option value="139">메론</option>
-                        <option value="134">바나나</option>
-                        <option value="165">파인애플</option>
-                        <option value="124">딸기</option>
+                        <option value="143">꿈꾸는나무</option>
+                        <option value="145">리에</option>
+                        <option value="185">판기</option>
+                        <option value="161">투마로</option>
+                        <option value="175">미수</option>
+                        <option value="126">수박</option>
+                        <option value="173">토마토</option>
+                        <option value="118">오렌지</option>
+                        <option value="119">메론</option>
+                        <option value="120">바나나</option>
+                        <option value="131">파인애플</option>
+                        <option value="162">딸기</option>
                         <option value="133">감</option>
-                        <option value="165">한라봉</option>
-                        <option value="145">망고</option>
-                        <option value="176">레몬</option>
+                        <option value="143">한라봉</option>
+                        <option value="158">망고</option>
+                        <option value="169">레몬</option>
                     </select>
-                </span>
-            </div>
-            <div>
-                <span class="na_box">
-                <input type="text" id="i" maxlength="3" placeholder="average" required>
-                </span>
-            </div>
-            <div>
-                <input type="button" value="Join in" onclick="doPush()">                
+                    <input type="text" id="avg" maxlength="3" placeholder="average" required>
+                    <a href="/myhome/bowl/bmt.html"><input type="button" value="Join in" onclick="doPush()">   </a>           
                 <!-- <input type="submit" value="Join in"> -->
                 <!-- <button><a href="/myhome/bowl/bmt.html">Join in</a></button> -->
             </div>

@@ -22,56 +22,44 @@
     <!-- 컨텐츠 -->
     <!-- <section> -->
     <div class="content">
-
-        <button><a href="#" onclick="laneData()">lane</a></button> 
-
-    <form action="join">
-        <div>
-            <select name="nick" onchange="document.getElementById('i').value=this.value;">
-                <option>nick name</option>
-                <option value="꿈꾸는나무">꿈꾸는나무</option>
-                <option value="200">배</option>
-                <option value="130">귤</option>
-                <option value="135">복숭아</option>
-                <option value="145">포도</option>
-                <option value="167">수박</option>
-                <option value="187">토마토</option>
-                <option value="188">오렌지</option>
-                <option value="139">메론</option>
-                <option value="134">바나나</option>
-                <option value="165">파인애플</option>
-                <option value="124">딸기</option>
-                <option value="133">감</option>
-                <option value="165">한라봉</option>
-                <option value="145">망고</option>
-                <option value="176">레몬</option>
-            </select>
-        <!-- </div>
-        <div> -->
-            <input class="box_average" type="text" id="item" maxlength="3" placeholder="average" required>
-        </div>
-        <div>
-            <input type="button" value="Join in" onclick="doPush()">
-        </div>
-
-
-    </form>
-    <div class="clear:both"> 
-    <button id="setBtn">레인배정</button> 
-    </div>
-    <ul>
-        <li></li>
-        <li></li>
-
-    </ul>
+        <form action="join">
+            <div>
+                <select id="selNick" onchange="document.getElementById('avg').value=this.value;">
+                    <option>nick name</option>
+                    <option value="143">꿈꾸는나무</option>
+                    <option value="145">리에</option>
+                    <option value="185">판기</option>
+                    <option value="161">투마로</option>
+                    <option value="175">미수</option>
+                    <option value="126">수박</option>
+                    <option value="173">토마토</option>
+                    <option value="118">오렌지</option>
+                    <option value="119">메론</option>
+                    <option value="120">바나나</option>
+                    <option value="131">파인애플</option>
+                    <option value="162">딸기</option>
+                    <option value="133">감</option>
+                    <option value="143">한라봉</option>
+                    <option value="158">망고</option>
+                    <option value="169">레몬</option>
+                </select>
+                <input type="text" id="avg" maxlength="3" placeholder="average" required>
+                <input type="button" value="Join in" onclick="doPush()">
+            </div>
+        </form>
+        <br><br><br><br>
     <!-- 결승  -->
     <ul class="fto_box">
         <input class="bo_nick" type="text" id="item">
         <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
     </ul>
+    <ul class="fto_box">
+            <input class="bo_nick" type="text" id="item">
+            <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+    </ul>
     <!-- 3차전 -->
     <br><br><br><br>
-    <ul class="ft_box">
+    <ul class="to_box">
         <input class="bo_nick" type="text" id="item">
         <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
     </ul>
@@ -79,162 +67,148 @@
         <input class="bo_nick" type="text" id="item">
         <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
     </ul>  
+    <ul class="ft_box">
+        <input class="bo_nick" type="text" id="item">
+        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+    </ul>
+    <ul class="ft_box">
+        <input class="bo_nick" type="text" id="item">
+        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+    </ul>      
     <!-- 2차전 -->
     <br><br><br><br>
     <ul class="fo_box">
         <input class="bo_nick" type="text" id="item">
         <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
     </ul>
-    <ul class="th_box">
+    <ul class="fo_box">
         <input class="bo_nick" type="text" id="item">
         <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
     </ul>  
-    <ul class="tw_box">
+    <ul class="fo_box">
         <input class="bo_nick" type="text" id="item">
         <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
     </ul>  
-    <ul class="on_box">
+    <ul class="fo_box">
         <input class="bo_nick" type="text" id="item">
         <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-    </ul>    
+    </ul>
+    <ul class="fo_box">
+        <input class="bo_nick" type="text" id="item">
+        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+    </ul>
+    <ul class="fo_box">
+        <input class="bo_nick" type="text" id="item">
+        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+    </ul>  
+    <ul class="fo_box">
+        <input class="bo_nick" type="text" id="item">
+        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+    </ul>  
+    <ul class="fo_box">
+        <input class="bo_nick" type="text" id="item">
+        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+    </ul>          
     <!-- 1차전 -->
     <br><br><br><br>
     <ul class="ei_box">
-        <input class="bo_nick" type="text" id="i">
         <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+        <input class="bo_nick" type="text" id="nick" value="">
+        <div class="box"> AVG : <span id="result"></span>
+        </div> 
+    </ul>     
+    <ul class="ei_box">
+        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+        <input class="bo_nick" type="text" id="nick" value="">
+        <div class="box">AVG : <span id="result"></span>
+        </div> 
+    </ul>
+    <ul class="ei_box">
+        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+        <input class="bo_nick" type="text" id="nick" value="">
+        <div class="box">AVG : <span id="result"></span>
+        </div> 
+    </ul>    
+    <ul class="ei_box">
+        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+        <input class="bo_nick" type="text" id="nick" value="">
+        <div class="box">AVG : <span id="result"></span>
+        </div> 
+    </ul>      
+    <ul class="ei_box">
+        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+        <input class="bo_nick" type="text" id="nick" value="">
+        <div class="box">AVG : <span id="result"></span>
+        </div> 
+    </ul>    
+    <ul class="ei_box">
+        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+        <input class="bo_nick" type="text" id="nick" value="">
+        <div class="box">AVG : <span id="result"></span>
+        </div> 
+    </ul>
+    <ul class="ei_box">
+        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+        <input class="bo_nick" type="text" id="nick" value="">
+        <div class="box">AVG : <span id="result"></span>
+        </div> 
+    </ul>    
+    <ul class="ei_box">
+        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+        <input class="bo_nick" type="text" id="nick" value="">    
+        <div class="box">AVG : <span id="result"></span>
+        </div> 
+    </ul> 
+    <ul class="ei_box">
+        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+        <input class="bo_nick" type="text" id="nick" value="">
         <div class="box"> AVG : <span id="result"></span>
         </div> 
     </ul>    
     <ul class="ei_box">
-        <input class="bo_nick" type="text" id="i">
         <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+        <input class="bo_nick" type="text" id="nick" value="">
         <div class="box">AVG : <span id="result"></span>
         </div> 
     </ul>
+
     <ul class="ei_box">
-        <input class="bo_nick" type="text" id="i">
         <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+        <input class="bo_nick" type="text" id="nick" value="">
         <div class="box">AVG : <span id="result"></span>
         </div> 
-    </ul>    
+    </ul>  
     <ul class="ei_box">
-        <input class="bo_nick" type="text" id="i">
         <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+        <input class="bo_nick" type="text" id="nick" value="">
         <div class="box">AVG : <span id="result"></span>
         </div> 
     </ul>      
     <ul class="ei_box">
-        <input class="bo_nick" type="text" id="i">
+            <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+            <input class="bo_nick" type="text" id="nick" value="">   
+            <div class="box">AVG : <span id="result"></span>
+            </div> 
+        </ul> 
+        <ul class="ei_box">
+            <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+            <input class="bo_nick" type="text" id="nick" value="">
+            <div class="box"> AVG : <span id="result"></span>
+            </div> 
+        </ul> 
+    <ul class="ei_box">
         <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+        <input class="bo_nick" type="text" id="nick" value="">
         <div class="box">AVG : <span id="result"></span>
         </div> 
     </ul>    
     <ul class="ei_box">
-        <input class="bo_nick" type="text" id="i">
         <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
+        <input class="bo_nick" type="text" id="nick" value="">    
         <div class="box">AVG : <span id="result"></span>
         </div> 
-    </ul>
-    <ul class="ei_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-        <div class="box">AVG : <span id="result"></span>
-        </div> 
-    </ul>    
-    <ul class="ei_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-        <div class="box">AVG : <span id="result"></span>
-        </div> 
-    </ul>   
-    <!-- 결승 -->
-    <br><br><br><br><br><br>
-    <ul class="fto_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-    </ul>
-    <!-- 3차전 -->
-    <br><br><br><br>
-    <ul class="ft_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-    </ul>
-    <ul class="to_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-    </ul> 
-    <!-- 2차전 -->
-    <br><br><br><br>
-    <ul class="fo_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-    </ul>
-    <ul class="th_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
     </ul>  
-    <ul class="tw_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-    </ul>  
-    <ul class="on_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-    </ul>  
-    <!-- 1차전 -->
-    <br><br><br><br>
-    <ul class="ei_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-        <div class="box">AVG : <span id="result"></span>
-        </div> 
-    </ul>    
-    <ul class="ei_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-        <div class="box">AVG : <span id="result"></span>
-        </div> 
-    </ul>
-    <ul class="ei_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-        <div class="box">AVG : <span id="result"></span>
-        </div> 
-    </ul>    
-    <ul class="ei_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-        <div class="box">AVG : <span id="result"></span>
-        </div> 
-    </ul>      
-    <ul class="ei_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-        <div class="box">AVG : <span id="result"></span>
-        </div> 
-    </ul>    
-    <ul class="ei_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-        <div class="box">AVG : <span id="result"></span>
-        </div> 
-    </ul>
-    <ul class="ei_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-        <div class="box">AVG : <span id="result"></span>
-        </div> 
-    </ul>    
-    <ul class="ei_box">
-        <input class="bo_nick" type="text" id="i">
-        <input class="bo_score" type="text" maxlength="3" placeholder="Score"><br>
-        <div class="box">AVG : <span id="result"></span>
-        </div> 
-    </ul>   
-
- 
-
-
+    </div>       
     <!-- </section> -->
     <!-- 풋터 -->
     <!-- <footer>경기도 수원시 장안구 정조로</footer> -->
