@@ -16,7 +16,7 @@ body { background-image: url("../img/math.jpg")
     color:white; font-size: 35px; text-align: center; text-decoration: none;
 }
 .calc .btns a:hover {
-    background-color: cyan;
+    background-color: gold ;
 }
 .btn_numb {background-color: black;}
 .btn_sign {background-color: #444;}

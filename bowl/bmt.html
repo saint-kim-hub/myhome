@@ -21,33 +21,54 @@
     <div class="clearfix"></div>
     <!-- 컨텐츠 -->
     <!-- <section> -->
-    <div class="content">
-        <form action="join">
-            <div>
-                <select id="selNick" onchange="document.getElementById('avg').value=this.value;">
-                    <option>nick name</option>
-                    <option value="143">꿈꾸는나무</option>
-                    <option value="145">리에</option>
-                    <option value="185">판기</option>
-                    <option value="161">투마로</option>
-                    <option value="175">미수</option>
-                    <option value="126">수박</option>
-                    <option value="173">토마토</option>
-                    <option value="118">오렌지</option>
-                    <option value="119">메론</option>
-                    <option value="120">바나나</option>
-                    <option value="131">파인애플</option>
-                    <option value="162">딸기</option>
-                    <option value="133">감</option>
-                    <option value="143">한라봉</option>
-                    <option value="158">망고</option>
-                    <option value="169">레몬</option>
-                </select>
-                <input type="text" id="avg" maxlength="3" placeholder="average" required>
-                <input type="button" value="Join in" onclick="doPush()">
-            </div>
-        </form>
-        <br><br><br><br>
+            <div class="content">
+                    <form action="join">              
+                        <div>
+                            <select name="selNick" id="selNick" onchange="document.getElementById('avg').value=this.value;">
+                                <option>nick name</option>
+                                <option value="143">꿈꾸는나무</option>
+                                <option value="145">리에</option>
+                                <option value="185">판기</option>
+                                <option value="161">투마로</option>
+                                <option value="175">미수</option>
+                                <option value="126">수박</option>
+                                <option value="173">토마토</option>
+                                <option value="118">오렌지</option>
+                                <option value="119">메론</option>
+                                <option value="120">바나나</option>
+                                <option value="131">파인애플</option>
+                                <option value="162">딸기</option>
+                                <option value="133">감</option>
+                                <option value="143">한라봉</option>
+                                <option value="158">망고</option>
+                                <option value="169">레몬</option>
+                            <input type="text" id="avg" maxlength="3" placeholder="average">
+                            </select>
+                            <input type="button" value="Join in" onclick="doPush()">
+                        </div><br>
+                    </form>
+                        <ul>
+                        <li></li> 
+                        <li></li> 
+                        <li></li> 
+                        <li></li> 
+                        <li></li> 
+                        <li></li> 
+                        <li></li> 
+                        <li></li> 
+                        <li></li> 
+                        <li></li> 
+                        <li></li> 
+                        <li></li> 
+                        <li></li> 
+                        <li></li> 
+                        <li></li> 
+                        <li></li> 
+                        </ul>
+                        <div class="clear:both"> 
+                        <button id="setBtn">레인배정</button>  
+                        </div> 
+                        <br><br>
     <!-- 결승  -->
     <ul class="fto_box">
         <input class="bo_nick" type="text" id="item">
