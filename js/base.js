@@ -10,53 +10,59 @@ function doPush(){
     objArray.push(objAvg.value);
     nickname();
     average();
+    var push = document.join.na.value;
+    if(push =="0000")
+    document.location.href="/myhome/bowl/bmt.html"
+    else {
+    alert("닉네임과 에버리지를 확인하세요")
+    }
 }
+
 function nickname(){
     var getP = document.getElementById("selNick");
-    var nickvalue = getP.options[getP.selectedIndex].value;
-    var avgvalue = getP.options[getP.selectedIndex].value;
-    var setNick = 0, setAvg = 0;
-    if (nickvalue == '143' || avgvalue == '143') {
-        setNick = '꿈꾸는나무', setAvg = '143';
-    } else if(nickvalue == '145') {
+    var nick = getP.options[getP.selectedIndex].value;
+    var setNick = 0;
+    if (nick == '143') {
+        setNick = '꿈꾸는나무';
+    } else if(nick == '200') {
         setNick = '리에';
-    } else if(nickvalue == '185') {
+    } else if(nick == '145') {
         setNick = '판기';
-    } else if(nickvalue == '161') {
+    } else if(nick == '185') {
         setNick = '투마로';
-    } else if(nickvalue == '169') {
-        setNick = '레몬';
-    } else if(nickvalue == '126') {
+    } else if(nick == '161') {
+        setNick = '포도';
+    } else if(nick == '126') {
         setNick = '수박';
-    } else if(nickvalue == '173') {
+    } else if(nick == '173') {
         setNick = '토마토';
-    } else if(nickvalue == '118') {
+    } else if (nick == '118') {
         setNick = '오렌지';
-    } else if(nickvalue == '119') {
+    } else if(nick == '119') {
         setNick = '메론';
-    } else if(nickvalue == '120') {
+    } else if(nick == '120') {
         setNick = '바나나';
-    } else if(nickvalue == '131') {
+    } else if(nick == '131') {
         setNick = '파인애플';
-    } else if(nickvalue == '162') {
+    } else if (nick == '162') {
         setNick = '딸기';
-    } else if(nickvalue == '133') {
+    } else if(nick == '133') {
         setNick = '감';
-    } else if(nickvalue == '143') {
+    } else if(nick == '143') {
         setNick = '한라봉';
-    } else if(nickvalue == '158') {
+    } else if(nick == '158') {
         setNick = '망고';
-    } else if(nickvalue == '175' && avgvalue == '175') {
-        setNick = '미수', setAvg = '175';
+    } else if(nick == '175') {
+        setNick = '미수';
     } else{
     return false;
     }
-    document.getElementById("nickvalue").value = setNick;
-    document.getElementById("avgvalue").value = setAvg;
-}            
+    document.getElementById("nick").value = setNick;
+}
+
 $(function() { 
     var seatCnt = $("li").length; 
-$("#setBtn").click(function() { 
+    $("#setBtn").click(function() { 
     var seatNumArray = [], 
     rNum; 
     for( var i = 0; i < seatCnt; i++ ) { 
@@ -72,4 +78,4 @@ $("#setBtn").click(function() {
         $("li").eq(i).text(rNum); 
     } 
 }) 
- })  
+})

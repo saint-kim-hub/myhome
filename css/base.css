@@ -1,14 +1,15 @@
 body {margin:0;}
-body { background-image: url("/myhome/img/math.jpg")
-div, a { box-sizing: border-box; }
 
+div, a { box-sizing: border-box; }
 .gnb {
     list-style-type: none; margin:0; padding:0; overflow:hidden; background-color: black; margin-bottom: 24px;
 }
 .gnb li { 
     list-style-type: none; margin:0; padding:0; display:block;  float:left;   
- }
-.gnb .float_r{ float:right; color:white; }
+}
+.gnb .float_r{ 
+    float:right; color:white; 
+}
 .gnb li a {
     display: block; color: white; text-align:center; padding: 15px 15px; text-decoration: none;
 }
@@ -16,7 +17,7 @@ div, a { box-sizing: border-box; }
     background-color : red ; color: white;
 }
 .gnb li a:hover {
-    background-color : gold;
+    background-color : darkgoldenrod;
 }
 .clearfix{
     content:""; clear:both; display:table;

@@ -9,15 +9,25 @@
     <link rel="stylesheet" href="../css/bowl.css">
     <script>
         function pwChk() {
-            if(document.firm.pw.value =="0000")
-            alert("정확합니다")
+            var pass = document.frm.pw.value;
+            if(pass =="0000")
+            document.location.href="/myhome/bowl/bsi.html"
             else {
-            alert("다시 입력하세요")
+            alert("비밀번호를 확인하세요")
             }
-         }
+        }
     </script>
+    <style>
+        @media (max-width: 400px) {
+            .bodyimg { background-size: auto; height: 100%; }
+        }
+        .bodyimg { background-image: url('../img/sung.jpg');
+            display : block; height: 100%;
+          
+        }
+    </style>
 </head>
-<body>
+<body class="bodyimg">
     <!-- 헤더 -->
     <header>
         <!-- <a href="/myhome/"><img src="../img/logo.png" alt="logo"></a> -->
@@ -37,13 +47,12 @@
     <!-- <section> -->
     <div class="content">
         <h2>Please sign in</h2>
-        <form class="signin"><br>
-            <!-- <label>E-mail</label>
-            <input type="email" id="inputEmail" placeholder="Email address" required><br>
+        <form name="frm" class="signin">
+            <label>E-mail</label>
+            <input type="email" id="inputEmail" placeholder="Email address"><br>
             <label>Password</label>
-            <input type="password" id="inputPassword" name="pw" size=4 placeholder="Password" onclick="pwChk()" required><br><br>
-            <button type="submit" href="/myhome/bowl/bsi.html">Log in</button> -->
-            <button><a href="/myhome/bowl/bsi.html">Log in</a></button>
+            <input type="password" id="inputPassword" name="pw" size=4 placeholder="Password"> <br><br>
+            <input type="button" value="Log in" href="/myhome/bowl/bsi.html" onclick="pwChk()">
         </form> 
     </div>
     <!-- </section> -->

@@ -5,7 +5,7 @@ body { background-image: url("../img/math.jpg")
     width:300px; height:420px; margin:auto; background-color: #777; border-radius:20px; padding-top:20px;
 } 
 .calc .disp {
-    width:280px; height:60px; background-color: yellowgreen; border-radius:20px;
+    width:280px; height:60px; background-color: rgb(175, 209, 106); border-radius:20px;
     font-size: 40px; text-align: right; margin-left: auto; margin-right: auto; margin-bottom: 20px; 
 }
 .calc .btns {
@@ -16,7 +16,7 @@ body { background-image: url("../img/math.jpg")
     color:white; font-size: 35px; text-align: center; text-decoration: none;
 }
 .calc .btns a:hover {
-    background-color: gold ;
+    background-color: darkgoldenrod ;
 }
 .btn_numb {background-color: black;}
 .btn_sign {background-color: #444;}
