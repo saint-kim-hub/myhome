@@ -1,3 +1,49 @@
+var inVal = "", lastIn = "", inPer="";
+
+function numText(obj) {
+    var text = obj.textContent;
+    if (checkDupSign(text)) {
+    } else {
+        lastIn = text; 
+        inVal += text; 
+    }
+    showInVal();
+}
+function perText() {
+    numText();
+    inVal=inVal/100;
+    showReVal();
+}
+function showInVal() {
+    document.getElementById("input").innerHTML = inVal;
+}
+function showReVal() {
+    document.getElementById("result").innerHTML = inVal;
+}
+function checkDupSign(str) {
+    var signs = "+-*/%";
+    var result = false;
+    if (signs.indexOf(str) !== -1 && lastIn === str) {
+        result = true;
+    }
+    return result;
+}
+function showResult() {
+    var result = eval(inVal);
+    var el = document.getElementById("result");
+    el.innerHTML = result;
+}
+function deleteLastIn(){
+    inVal = inVal.slice(0,-1);
+    lastIn = inVal.slice(-1);
+    showInVal();
+}  
+function allClear(){
+    inVal = inVal.slice(0,0);
+    lastIn = inVal.slice(0);
+    showInVal();
+    showReVal();
+}  
 var objArray = new Array();
 function average() {
     var objResult = document.getElementById("result");
@@ -17,7 +63,6 @@ function doPush(){
     alert("닉네임과 에버리지를 확인하세요")
     }
 }
-
 function nickname(){
     var getP = document.getElementById("selNick");
     var nick = getP.options[getP.selectedIndex].value;
@@ -59,23 +104,3 @@ function nickname(){
     }
     document.getElementById("nick").value = setNick;
 }
-
-$(function() { 
-    var seatCnt = $("li").length; 
-    $("#setBtn").click(function() { 
-    var seatNumArray = [], 
-    rNum; 
-    for( var i = 0; i < seatCnt; i++ ) { 
-        while(true) { 
-        rNum = Math.floor(Math.random() * seatCnt) + 1; 
-        var ex = false; 
-        seatNumArray.forEach(function(num) { 
-            if( num == rNum ) ex = !ex; 
-        }) 
-            if( !ex ) break; 
-        } 
-        seatNumArray.push(rNum); 
-        $("li").eq(i).text(rNum); 
-    } 
-}) 
-})

@@ -2,23 +2,68 @@
 body { background-image: url("../img/math.jpg")
 }
 .calc { 
-    width:300px; height:420px; margin:auto; background-color: #777; border-radius:20px; padding-top:20px;
+    width:288px; height:460px; margin:auto; background-color: lightgray; border-radius:5px; padding-top:5px;
 } 
-.calc .disp {
-    width:280px; height:60px; background-color: rgb(175, 209, 106); border-radius:20px;
-    font-size: 40px; text-align: right; margin-left: auto; margin-right: auto; margin-bottom: 20px; 
-}
-.calc .btns {
-    width: 280px; margin-left: auto; margin-right: auto;
-}
-.calc .btns a {
-    display: block; width:60px; height:50px; float:left; margin:5px; border-radius: 10px;
-    color:white; font-size: 35px; text-align: center; text-decoration: none;
-}
-.calc .btns a:hover {
+ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .calc::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  .calc section {
+    float: left;
+  }
+  
+  .calc section .disp_Expr {
+    height: 30px;
+    padding: 10px 0 0 10px;
+    font-size: 18px;
+  }
+  
+  .calc section .disp_Rslt {
+    height: 40px;
+    padding: 10px 0 10px 10px;
+    font-size: 20px;
+  }
+  
+  .calc section .func ul,
+  .calc section .btns ul {
+    margin: 0;
+  }
+  
+  .calc section .func ul::after,
+  .calc section .btns ul::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  .calc section .func ul li,
+  .calc section .btns ul li {
+    float: left;
+  }
+  
+  .calc section .func ul li a,
+  .calc section .btns ul li a {
+    display: table-cell;
+    width: 48px;
+    height: 48px;
+    border: 1px solid lightgray;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .calc section .func ul li a button,
+  .calc section .btns ul li a button {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+  }
+  .calc section .btns ul li a button:hover {
     background-color: darkgoldenrod ;
-}
-.btn_numb {background-color: black;}
-.btn_sign {background-color: #444;}
-.bg_red {background-color: red;}
-.bg_dark {background-color: #333;}
+  }

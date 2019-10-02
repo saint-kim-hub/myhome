@@ -10,6 +10,17 @@
     <script>
         function pwChk() {
             var pass = document.frm.pw.value;
+            // var em = document.frm.em.value;            
+            // if (em === "") 
+            // alert("메일주소를 확인하세요")
+            // else {
+            // alert("비밀번호를 확인하세요")
+            // }
+            // var frm = document.form["frm"];
+            // var x = frm["em"].value;
+            // if (x==="") {
+            //     alert("메일주소를 확인하세요")
+            //}
             if(pass =="0000")
             document.location.href="/myhome/bowl/bsi.html"
             else {
@@ -49,14 +60,14 @@
         <h2>Please sign in</h2>
         <form name="frm" class="signin">
             <label>E-mail</label>
-            <input type="email" id="inputEmail" placeholder="Email address"><br>
+            <input type="email" id="inputEmail" name ="em" placeholder="Email address"><br>
             <label>Password</label>
             <input type="password" id="inputPassword" name="pw" size=4 placeholder="Password"> <br><br>
             <input type="button" value="Log in" href="/myhome/bowl/bsi.html" onclick="pwChk()">
         </form> 
     </div>
     <!-- </section> -->
-    <!-- 풋터 -->
-    <!-- <footer>경기도 수원시 장안구 정조로</footer> -->
+    <!-- 풋터  -->
+    <footer>Photo by 222</footer>
 </body>
 </html>

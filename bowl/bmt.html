@@ -8,27 +8,28 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/bowl.css">
     <script src="../js/base.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js">
-    $(function() { 
-    var seatCnt = $("li").length; 
-    $("#setBtn").click(function() { 
-    var seatNumArray = [], 
-    rNum; 
-    for( var i = 0; i < seatCnt; i++ ) { 
-        while(true) { 
-        rNum = Math.floor(Math.random() * seatCnt) + 1; 
-        var ex = false; 
-        seatNumArray.forEach(function(num) { 
-            if( num == rNum ) ex = !ex; 
-        }) 
-            if( !ex ) break; 
-        } 
-        seatNumArray.push(rNum); 
-        $("li").eq(i).text(rNum); 
-    } 
-}) 
-})
-    </script> 
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+    <script>
+        $(function() { 
+            var seatCnt = $("li").length; 
+            $("#setBtn").click(function() { 
+                var seatNumArray = [], 
+                rNum; 
+                for( var i = 0; i < seatCnt; i++ ) { 
+                    while(true) { 
+                    rNum = Math.floor(Math.random() * seatCnt) + 1; 
+                    var ex = false; 
+                    seatNumArray.forEach(function(num) { 
+                        if( num == rNum ) ex = !ex; 
+                    }) 
+                        if( !ex ) break; 
+                    } 
+                    seatNumArray.push(rNum); 
+                    $("li").eq(i).text(rNum); 
+                } 
+            }) 
+        })
+    </script>
     <style>
         @media (max-width: 400px) {
             .bodyimg { background-size: auto; height: 100%; }
@@ -52,7 +53,7 @@
     <!-- <section> -->
         <div class="content">
             <h2>Play Game</h2>
-            <!-- <form name="join">
+            <form name="join">
                 <div>
                     <select id="selNick" onchange="document.getElementById('avg').value=this.value;">
                         <option>nick name</option>
@@ -76,12 +77,11 @@
                     <input type="text" id="avg" name="na" maxlength="3" placeholder="average">
                     <input type="button" value="Join in" onclick="doPush()">
                 </div>
-            </form><br> -->
-            <form>
+            </form><br>
                 <div class="clear:both">
                 <button id="setBtn">레인 배정</button>
                 <ul class="lane">
-                    <li></li>
+                    <li><td></td></li>
                     <li></li>
                     <li></li>
                     <li></li>
@@ -93,7 +93,6 @@
                     <li></li>
                 </ul>
                 </div>
-            </form>
         </div>
     <div>
     <br><br><img src="../img/photo.gif">
@@ -266,6 +265,6 @@
     </div>        
     <!-- </section> -->
     <!-- 풋터 -->
-    <!-- <footer>경기도 수원시 장안구 정조로</footer> -->
+    <footer>Photo by 222</footer>
 </body>
 </html>

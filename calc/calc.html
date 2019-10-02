@@ -25,34 +25,51 @@
     </ul>
     <div class="clearfix"></div><br>
     <!-- 컨텐츠 -->
-    <section>
+   
         <div class="calc">
-            <div class="disp">-2x(3+4)</div>
+            <section>
+            <div class="disp_Expr">
+                Calaulation: <span id="input"></span>
+            </div>
+            <div class="disp_Rslt">
+                Result: <span id="result"></span>
+            </div>
+            <!-- <div class="disp">-2x(3+4)</div> -->
             <hr>
             <div class="btns">
-                <a href="" class="bg_red">C</a>
-                <a href="" class="bg_dark">B</a>
-                <a href="" class="btn_sign">+/-</a>
-                <a href="" class="btn_sign">/</a>
-                <a href="" class="btn_numb">7</a>
-                <a href="" class="btn_numb">8</a>
-                <a href="" class="btn_numb">9</a>
-                <a href="" class="btn_sign">x</a>
-                <a href="" class="btn_numb">4</a>
-                <a href="" class="btn_numb">5</a>
-                <a href="" class="btn_numb">6</a>
-                <a href="" class="btn_sign">-</a>
-                <a href="" class="btn_numb">1</a>
-                <a href="" class="btn_numb">2</a>
-                <a href="" class="btn_numb">3</a>
-                <a href="" class="btn_sign">+</a>
-                <a href="" class="btn_sign">(</a>
-                <a href="" class="btn_numb">0</a>
-                <a href="" class="btn_sign">)</a>
-                <a href="" class="btn_sign">=</a>
+                <ul>
+                    <li><a class="btn_sgn" data-key="clr"><button onclick="allClear()">AC</button></a></li>
+                    <li><a class="btn_sgn" data-key="bck"><button onclick="deleteLastIn()">BS</button></a></li>
+                    <li><a class="btn_sgn" data-key="per"><button onclick="numText(this)">%</button></a></li>
+                    <li><a class="btn_sgn" data-key="/"><button onclick="numText(this)">/</button></a></li>
+                </ul>
+                <ul>
+                    <li><a class="btn_num" data-key="7"><button onclick="numText(this)">7</button></a></li>
+                    <li><a class="btn_num" data-key="8"><button onclick="numText(this)">8</button></a></li>
+                    <li><a class="btn_num" data-key="9"><button onclick="numText(this)">9</button></a></li>
+                    <li><a class="btn_sgn" data-key="x"><button onclick="numText(this)">*</button></a></li>
+                </ul>
+                <ul>
+                    <li><a class="btn_num" data-key="4"><button onclick="numText(this)">4</button></a></li>
+                    <li><a class="btn_num" data-key="5"><button onclick="numText(this)">5</button></a></li>
+                    <li><a class="btn_num" data-key="6"><button onclick="numText(this)">6</button></a></li>
+                    <li><a class="btn_sgn" data-key="-"><button onclick="numText(this)">-</button></a></li>
+                </ul>
+                <ul>
+                    <li><a class="btn_num" data-key="1"><button onclick="numText(this)">1</button></a></li>
+                    <li><a class="btn_num" data-key="2"><button onclick="numText(this)">2</button></a></li>
+                    <li><a class="btn_num" data-key="3"><button onclick="numText(this)">3</button></a></li>
+                    <li><a class="btn_sgn" data-key="+"><button onclick="numText(this)">+</button></a></li>
+                </ul>
+                <ul>
+                    <li><a class="btn_sgn" data-key="("><button onclick="numText(this)">(</button></a></li>
+                    <li><a class="btn_num" data-key="0"><button onclick="numText(this)">0</button></a></li>
+                    <li><a class="btn_sgn" data-key=")"><button onclick="numText(this)">)</button></a></li>
+                    <li><a class="btn_sgn" data-key="="><button onclick="showResult(this)">=</button></a></li>
+                </ul>
             </div>
+        </section>
         </div>
-    </section>
     <script src="../js/base.js"></script>
     <!-- 풋터 -->
     <!-- <footer>경기도 수원시 장안구 정조로</footer> -->
